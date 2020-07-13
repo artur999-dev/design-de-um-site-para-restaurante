@@ -1,0 +1,419 @@
+@charset "UTF-8";
+@font-face {
+    font-family: h1;
+    src: url('/Galada-Regular.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%
+}
+body{
+    background: url('/img/back.webp') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+div#centro {
+    margin: 15%;
+    margin-top: 2%;
+    border: 10px solid black;
+    border-radius: 20px;
+    margin-bottom: 1%;
+    height: 100vh;
+}
+nav#menu ul {
+    position: relative;
+    left: 32%;
+}
+
+nav#menu li {
+    display: inline;
+    font-size: 2rem;
+    align-self: center;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+nav#menu li:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+header#topo h1 {
+    position: relative;
+    left: 5%;
+    top: 25px;
+    font-size: 3rem;
+    color: #fff;
+}
+div#centro h1#txt {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5%;
+    color: #fff;
+    font-family: h1;
+}
+div#centro h1#tt {
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1%;
+    color: #fff;
+    background-color: black;
+    width: 160px;
+    height: 30px;
+    margin-left: 42%;
+    border-radius: 20px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+div#baixo h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    height: 150px;
+    margin-top: -20px;
+}
+div#baixo h2 {
+    margin-top: -190px;
+    margin-left: 28%;
+    color: coral;
+    font-size: 3rem;
+    font-style: italic;
+}
+div#baixo {
+   
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    height: 200px;
+}
+input#botao {
+    align-self: center;
+    top: -90px;
+    width: 150px;
+    height: 50px;
+    background-color: coral;
+   
+}
+input {
+    position: relative;
+    left: 40%;
+    border-radius: 50px;
+    height: 45px;
+    background-color: black;
+    text-align: center;
+    color:white;
+    margin-top: 20px;
+}
+
+nav#menu2 {
+    display: none;
+}
+input#check {
+    display: none;
+}
+label {
+    opacity: 1;
+}
+@media (max-width: 1440px) {
+    label {
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+    nav#menu li {
+        font-size: 1.7rem;
+        padding: 7px;
+    }
+    header#topo h1 {
+        font-size: 2.5rem;
+    }
+    div#baixo h2 {
+        font-size: 2.2rem;
+        margin-left: 20%;
+    }
+    div#centro h1#tt {
+        margin-left: 35%;
+    }
+    input#botao {
+        margin-left: -12%;
+    }
+    label {
+        opacity: 0;
+    }
+}
+@media (max-width: 425px) {
+    nav#menu li {
+       display: none;
+    }
+    nav#menu2 {
+        display: block;
+    }
+    input#check {
+        display: none;
+    }
+    label {
+        opacity: 1;
+    }
+    
+    header#topo h1 {
+        font-size: 2rem;
+    }
+    div#baixo h2 {
+        font-size: 2.2rem;
+        margin-left: 20%;
+
+    }
+    div#baixo h1 {
+       height: 180px;
+    }
+    div#centro h1#tt {
+        margin-left: 20%;
+    }
+    div#centro h1#txt {
+        font-size: 1.5rem;
+        margin-top: 50px;
+    }
+    input#botao {
+        margin-left: -29%;
+        
+    }
+    #check {
+        display: none;
+    }
+    #icone {
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        z-index: 100;
+        left: 290px;
+        top: 30px;
+    }
+    .barra {
+        background-color: #494950;
+        height: 500px;
+        width: 277px;
+        position: absolute;
+        transition: all 0.2s linear;
+        opacity: 0;
+       top: 19px;
+       border-radius: 10px;
+        
+    }
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 60px;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    .link {
+        background-color: gray;
+        padding: 20px;
+        font-family: Arial;
+        font-size: 12pt;
+        transition: all 0.2s linear;
+        color: white;
+        border-bottom: 2px solid black;
+    }
+    .link:hover {
+        background-color: lightblue;
+    }
+    #check:checked ~ .barra {
+        opacity: 1;
+    }
+    #check:checked ~ input#botao {
+        opacity: 0;
+    }
+
+}
+@media (max-width: 375px) {
+    nav#menu li {
+       display: none;
+    }
+    nav#menu2 {
+        display: block;
+    }
+    input#check {
+        display: none;
+    }
+    label {
+        opacity: 1;
+    }
+    
+    header#topo h1 {
+        font-size: 2rem;
+    }
+    div#baixo h2 {
+        font-size: 1.8rem;
+        margin-left: 25%;
+    }
+    div#baixo h1 {
+        font-size: 1rem;
+        margin-left: 8%;
+    }
+    div#centro h1#tt {
+        margin-left: 20%;
+    }
+    div#centro h1#txt {
+        font-size: 1.3rem;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    input#botao {
+        margin-left: -29%;
+        
+    }
+    #check {
+        display: none;
+    }
+    #icone {
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        z-index: 100;
+        left: 240px;
+        top: 30px;
+    }
+    .barra {
+        background-color: #494950;
+        height: 500px;
+        width: 243px;
+        position: absolute;
+        transition: all 0.2s linear;
+        opacity: 0;
+       top: 17px;
+       border-radius: 10px;
+        
+    }
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 60px;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    .link {
+        background-color: gray;
+        padding: 20px;
+        font-family: Arial;
+        font-size: 12pt;
+        transition: all 0.2s linear;
+        color: white;
+        border-bottom: 2px solid black;
+    }
+    .link:hover {
+        background-color: lightblue;
+    }
+    #check:checked ~ .barra {
+        opacity: 1;
+    }
+    #check:checked ~ input#botao {
+        opacity: 0;
+    }
+
+}
+@media (max-width: 320px) {
+    nav#menu li {
+       display: none;
+    }
+    nav#menu2 {
+        display: block;
+    }
+    input#check {
+        display: none;
+    }
+    label {
+        opacity: 1;
+    }
+    
+    header#topo h1 {
+        font-size: 2rem;
+    }
+    div#baixo h2 {
+        font-size: 1.8rem;
+        margin-left: 20%;
+    }
+    div#baixo h1 {
+        font-size: 1rem;
+        margin-left: 3%;
+    }
+    div#centro h1#tt {
+        margin-left: 10%;
+    }
+    div#centro h1#txt {
+        font-size: 1.3rem;
+        margin-top: 50px;
+        margin-left: 5%;
+    }
+    input#botao {
+        margin-left: -38%;
+        width: 140px;
+    }
+    #check {
+        display: none;
+    }
+    #icone {
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        z-index: 100;
+        left: 200px;
+        top: 30px;
+    }
+    .barra {
+        background-color: #494950;
+        height: 500px;
+        width: 204px;
+        position: absolute;
+        transition: all 0.2s linear;
+        opacity: 0;
+       top: 16px;
+       border-radius: 10px;
+        
+    }
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 60px;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    .link {
+        background-color: gray;
+        padding: 20px;
+        font-family: Arial;
+        font-size: 12pt;
+        transition: all 0.2s linear;
+        color: white;
+        border-bottom: 2px solid black;
+    }
+    .link:hover {
+        background-color: lightblue;
+    }
+    #check:checked ~ .barra {
+        opacity: 1;
+    }
+    #check:checked ~ input#botao {
+        opacity: 0;
+    }
+
+}
+
+
